@@ -1,0 +1,64 @@
+extends ../../layouts/ui-layout/ui-layout.pug
+
+block variables
+
+	- var title = 'Blog-post - Документация';
+
+	- var pageClass = 'body--dashboard';
+
+block content
+
+	.main-wrapper
+
+		.container.container--left.user-content.pt-35
+
+			h1 Пост в блоге
+
+			.section-ui
+
+				include ../../sections/blog-post.pug
+
+			
+			pre.
+			
+					include ../../sections/blog-post.pug
+
+
+			.title mixins/_textarea.pug
+
+			pre.
+
+				mixin textarea(placeholder)
+
+				textarea.textarea(placeholder=placeholder)
+
+								+textarea("Я тоже там был,вот мои впечатления")
+								+buttonPrimary('Опубликовать', '#!')
+
+					
+					
+							.section.ui
+
+										.blog-post__date   16 марта 2017
+
+										h1.blog-post__tittle Национальный парк Йосемити
+
+										img(src="../img/blog/post-img.jpg").blog-post__img
+
+										.blog-post__content
+
+											p Lorem ipsum dolor sit amet, consectetur  adipisicing elit. Reiciendis labore repellat pariatur velit. Ab non, veniam voluptatem dolores incidunt, perspiciatis blanditiis itaque reiciendis perferendis iusto odit nihil corrupti adipisci eligendi commodi eos fugiat.//
+
+											p Lorem ipsum dolor sit amet, consectetur  adipisicing elit. Incidunt sunt aperiam, quaerat consectetur, veritatis animi. Eius, tempora, commodi. Ratione ipsam, at vel impedit soluta quos a amet. //
+											.post-nav
+													+button('Предыдущий пост', '#!')
+													+buttonPrimary('Опубликовать', '#!')			
+
+
+			
+
+
+			
+			
+
+
